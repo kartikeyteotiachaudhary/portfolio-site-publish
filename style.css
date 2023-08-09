@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+   
+    
+}
+
+a{
+    text-decoration:none
+}
+
+.navbar{
+    height: 50px;
+    background-color:white;
+    display: flex;  
+    align-items: center;
+    font-weight: 700;
+    color:white;
+  
+}
+
+.navbar a{
+    margin: 0px 20px 0px 20px;
+    color: black;
+}
+.nav-options{
+    width: 80%;
+    display: flex;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-contact{
+    padding: 8px 8px 5px 8px;
+    min-height: 25px;
+    width: 90%;
+    background-color: rgb(75, 214, 144);
+    border:  2px solid transparent ;
+    border-radius: 20px;
+    box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+}
+
+.main{
+    background-color:black;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    
+}
+.main-profile{
+    background-image: url('kartikey_profile.jpg');
+    height: 470px;
+    width: 470px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 0px solid ;
+    border-radius:400px;
+    
+}
+
+.main-aboutme{
+    padding-left: 300px;
+}
+
+.main-aboutme h5{
+    color:  rgb(75, 214, 144);
+    font-size: 2rem;
+    font-weight: 30;
+}
+.main-aboutme h1{
+    color: white;
+    font-size: 5rem;
+}
+.main-aboutme span{
+    color:  rgb(75, 214, 144);
+    font-size: 4rem;
+}
+
+.main-aboutme p{
+    color: white;
+    padding-top: 15px;
+}
+
+.resume-button{
+    padding-top: 25px;
+    background-color: black;
+   
+}
+
+.resume-button button{
+   background: transparent;
+    color: rgb(75, 214, 144);
+    border: 1px solid rgb(75, 214, 144);
+    height: 30px;
+    padding: 8px 8px 25px 8px;
+    
+    width: max-content;
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 0 green;
+     transition:transform 0.2s, box-shadow 0.2s; 
+}
+
+.resume-button button:active{
+    transform: translateX(4px) translateY(4px);
+
+    box-shadow: 0 0 0 green;
+}
+
+.details{
+    border-top: 2px solid rgb(75, 214, 144);
+    border-bottom: 4px solid rgb(75, 214, 144);
+    background-color: black;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .details {
+      margin-bottom: 100px; /* Add a margin to create space */
+      /* ... existing styles ... */
+    }
+    
+}
+
+.card{
+    margin-top: 100px;
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border: 4px solid rgb(75, 214, 144);
+    border-radius: 60px;
+    padding: 40px;
+    margin: 12px;
+    
+    
+}
+.card h2{
+    text-align: center ;
+}
+
+.card ul{
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+  
+
+.card p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.foot-panel{
+    background-color:white;
+    height: 180px;   
+}
+
+.foot-panel p{
+    padding-top: 35px;
+    padding-left: 20px;
+    text-align: left;
+
+    font-size: 8rem;
+   opacity: 0.4;
+}
+
+.contact{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+    
+    
+}
+.contact a i{
+    
+    padding: 15px;
+    font-size: 50px;
+    
+}
+
+
+.copyright{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* Media query for screens with a maximum width of 768px (typical mobile screens) */
+@media screen and (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin: 5px;
+  }
+
+  /* Main section adjustments */
+  .main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-profile {
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .main-aboutme {
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-aboutme h5 {
+    font-size: 1.5rem;
+  }
+
+  .main-aboutme h1 {
+    font-size: 3rem;
+  }
+
+  .main-aboutme span {
+    font-size: 2.5rem;
+  }
+
+  /* Details section adjustments */
+  .details {
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    height: 85%;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card ul {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .card li {
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+  }
+
+  /* Footer section adjustments */
+
+  
+  .foot-panel p {
+      margin-top: 250px;
+      text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 5rem;
+  }
+
+  .contact {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .contact a i {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
+
+ /* Media query for screens between 769px and 1440px */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  /* Navbar adjustments */
+  .navbar {
+    height: auto;
+    padding: 10px;
+   
+    
+  }
+
+  .navbar a {
+    margin: 25px;
+    
+  }
+
+  /* Main section adjustments */
+  .main {
+    padding: 20px;
+  }
+
+  .main-profile {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .main-aboutme {
+    padding-left: 35px;
+  }
+
+  .main-aboutme p {
+    color: white;
+    padding-top: 15px;
+    
+    line-height: 1.4; /* Adjust line height for better readability */
+    white-space: normal; /* Reset white-space to default */
+    word-wrap: break-word; /* Allow long words to break */
+    hyphens: auto; /* Enable hyphenation for long words */
+    text-align: start;
+  }
+
+  .main-aboutme h5 {
+    font-size: 1.8rem;
+  }
+
+  .main-aboutme h1 {
+    font-size: 4rem;
+  }
+
+  .main-aboutme span {
+    font-size: 3rem;
+  }
+
+  /* Details section adjustments */
+  .details {
+    padding: 20px;
+    height: 900px;
+    padding-bottom: 50px;
+
+  }
+
+  .card {
+    margin-top: 20px;
+    width: 300px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Footer section adjustments */
+  .foot-panel p {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 4rem;
+  }
+
+  .contact a i {
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1648px) {
+
+  .main-aboutme p {
+    color: white;
+    padding-top: 15px;
+    padding-right: 10px;
+    line-height: 1.4; /* Adjust line height for better readability */
+    white-space: nowrap; /* Reset white-space to default */
+    word-wrap: break-word; /* Allow long words to break */
+    hyphens: auto; /* Enable hyphenation for long words */
+  }
+
+  .details {
+    margin-bottom: 90px; /* Adjust the margin to create more space */
+    height: 990px;
+  }
+
+}
